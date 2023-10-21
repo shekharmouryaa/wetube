@@ -5,7 +5,7 @@ import {MyHeader} from './Header'
 function App() {
 
   const cardInfo = {
-    title: "GREEN CARD",
+    title: "RED CARD",
     description :"this is demo test that we are showing this is demo test that we are showing"
   }
 
