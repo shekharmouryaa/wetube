@@ -12,7 +12,7 @@ export const Card = (props) => {
                     <strong>{count}</strong>
                     </p>
                     <button className="btn btn-primary" 
-                    onClick={()=> setCount(count + 1)}>Increase</button>
+                    onClick={()=> count + 1}>Increase</button>
                     <button className="btn btn-success mx-2" 
                     onClick={()=> setCount(count - 1)}>Decrease</button>
                 </div>
