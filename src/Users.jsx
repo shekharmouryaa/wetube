@@ -1,21 +1,21 @@
-import React, { useState , useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export const Users = () => {
     const [username, setUsername] = useState("Shekhar")
     const [count, setCount] = useState(1)
 
-useEffect(
-()=>{
-    setCount(10)
-    setUsername("Shashank")
+    useEffect(
+        () => {
+            setCount(10)
+            setUsername("Shashank")
 
-return ()=>{
-    setUsername("Shekhar")
-}
+            return () => {
+                setUsername("Shekhar")
+            }
 
-},[])
+        }, [])
 
-    
+
     const changeName = () => {
         setUsername("Himanshu")
     }
