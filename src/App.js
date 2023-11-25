@@ -1,20 +1,18 @@
-import { useState } from 'react';
 import './App.css';
-import RegistrationForm from './RegistrationForm';
-import ToggleButton from './ToggleButton';
-import { Users } from './Users';
+import ChildOne from './ChildOne';
+import ChildTwo from './ChildTwo';
+// import Childthree from './Childthree';
+import { CounterAppProvider } from './CounterAppProvider';
+
 function App() {
 
-
-  const [counttt , setCounntt] =useState(0)
-
   return (
-    <div>
-      {counttt}
-      <Users/>
-      <RegistrationForm/>
-      <ToggleButton/>
-      <button onClick={()=>setCounntt(counttt + 1)}>Click</button>
+    <div >
+      <CounterAppProvider>
+         <ChildOne/>
+         <ChildTwo/>
+     </CounterAppProvider>
+     
     </div>
   );
 }
