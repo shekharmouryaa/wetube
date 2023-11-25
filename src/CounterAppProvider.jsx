@@ -21,7 +21,6 @@ export const CounterAppProvider = ({children}) => {
         setCount(count + 1)
     }
     const changeTheme = ()=> {
-        debugger
         setDarkTheme(!dark)
     }
 
